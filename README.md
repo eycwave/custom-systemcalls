@@ -3,7 +3,7 @@
 This project was prepared to add and test kernel system calls as part of the Operating Systems course. The project includes custom system calls to retrieve, modify, and test specific process information.
 
 ## Contents
-1. Project Overview
+1. Project Overview    
     1.1 [Key Learning Objectives](#key-learning-objectives)  
     1.2 [Background Information](#background-information)  
     1.3 [System Calls in this Project](#system-calls-in-this-project)  
