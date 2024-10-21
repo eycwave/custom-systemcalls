@@ -3,12 +3,12 @@
 This project was prepared to add and test kernel system calls as part of the Operating Systems course. The project includes custom system calls to retrieve, modify, and test specific process information.
 
 ## Contents
-1. [Project Overview](#project-overview)
-    1.1 [Key Learning Objectives](#key-learning-objectives)
-    1.2 [Background Information](#background-information)
-    1.3 [System Calls in this Project](#system-calls-in-this-project)
-2. [File Structure](#file-structure)
-3. [Adding System Calls to the Kernel](#adding-system-calls-to-the-kernel)
+1. Project Overview
+    1.1 [Key Learning Objectives](#key-learning-objectives)  
+    1.2 [Background Information](#background-information)  
+    1.3 [System Calls in this Project](#system-calls-in-this-project)  
+2. [File Structure](#file-structure)  
+3. [Adding System Calls to the Kernel](#adding-system-calls-to-the-kernel)  
 4. [Testing](#testing)
 
 ## Project Overview
@@ -124,11 +124,11 @@ The following files have been modified or added:
   
 - `arch/x86/entry/syscalls/syscall_64.tbl`: The table where the new system call numbers for the x86_64 architecture are defined.
   
-- `tests/test_name_syscall.c`: A C file used to test the custom system call `name_syscall`.
+- `tests/test_name_syscall.c`: C file used to test the custom system call `name_syscall`.
   
-- `tests/test_get_state.c`: A C file used to test the custom system calls `get_proc_state` and `get_proc_state_string`.
+- `tests/test_get_state.c`: C file used to test the custom system calls `get_proc_state` and `get_proc_state_string`.
   
-- `tests/test_set_state.c`: A C file used to test the system call `set_proc_state`.
+- `tests/test_set_state.c`: C file used to test the system call `set_proc_state`.
 
 ## Adding System Calls to the Kernel
 
@@ -191,6 +191,7 @@ To test the new system calls, follow the steps below:
 
 ### Test `test_name_syscall.c`:
 This test checks the functionality of the custom system call *name_syscall*. It sends a message from the user space to the kernel logs.
+   
     ```bash
     gcc test_name_syscall.c -o test_syscall
     ./test_syscall
@@ -199,6 +200,7 @@ This test checks the functionality of the custom system call *name_syscall*. It 
 
 ### Test `test_get_state.c`:
 This test is used to verify the functionality of *get_proc_state* and *get_proc_state_string* system calls. These calls retrieve the state of a process, either in hexadecimal or string format.
+    
     ```bash
     gcc test_get_state.c -o test_get_state
     ./test_get_state [PID]  # Replace [PID] with the process ID you want to test
@@ -207,6 +209,7 @@ This test is used to verify the functionality of *get_proc_state* and *get_proc_
 
 ### Test `test_set_state.c`:
 This test is used to check the functionality of the *set_proc_state* system call, which modifies the state of a process. It changes the state of the process with the given PID to a specified value.
+    
     ```bash
     gcc test_set_state.c -o test_set_state
     ./test_set_state [PID] 0x01  # Replace [PID] with the process ID, and 0x01 with the desired state
