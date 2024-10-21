@@ -7,9 +7,9 @@ This project was prepared to add and test kernel system calls as part of the Ope
     1.1 [Key Learning Objectives](#key-learning-objectives)  
     1.2 [Background Information](#background-information)  
     1.3 [System Calls in this Project](#system-calls-in-this-project)  
-2. [File Structure](#file-structure)  
-3. [Adding System Calls to the Kernel](#adding-system-calls-to-the-kernel)  
-4. [Testing](#testing)
+3. [File Structure](#file-structure)  
+4. [Adding System Calls to the Kernel](#adding-system-calls-to-the-kernel)  
+5. [Testing](#testing)
 
 ## Project Overview
 
